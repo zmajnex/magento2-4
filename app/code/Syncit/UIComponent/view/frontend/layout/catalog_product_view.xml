@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+   <!-- <container name="product.info.media" htmlTag="div" htmlClass="product media" after="product.info.main">-->
+        <referenceContainer name="product.info.addtocart">
+<!--            <block class="Magento\Framework\View\Element\Template" name="uiblock" after="-" template="Syncit_UIComponent::uiblock.phtml"/>-->
+            <block class="Syncit\UIComponent\Block\UIBlock" name="uiblock" after="-" template="Syncit_UIComponent::uiblock.phtml"/>
+        </referenceContainer>
+</page>
