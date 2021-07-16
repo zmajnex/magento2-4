@@ -123,3 +123,4 @@ deploy.sh
 !/wp/wp-content/wp-themes
 setup.sh
 url.sql
+!/code
