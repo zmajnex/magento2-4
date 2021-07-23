@@ -26,10 +26,10 @@ class UIBlock extends \Magento\Framework\View\Element\Template
     /**
      * @return string
      */
-    public function test()
+    public function title()
     {
         //Your block code
-        return 'Number of something';
+        return 'Terms of service';
     }
 }
 

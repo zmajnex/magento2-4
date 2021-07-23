@@ -3,22 +3,23 @@
  * @var $block \Syncit\UIComponent\Block\UIBlock
  */
 ?>
-<div data-bind="scope:'syncit_component'">
-    <p data-bind="text:title"></p>
+<div id="temp" data-bind="scope:'syncit_component'">
+    <!-- ko template: getTemplate() --><!-- /ko -->
 </div>
 <script type="text/x-magento-init">
     {
-    "*": {
+    "#temp": {
         "Magento_Ui/js/core/app":{
            "components": {
                "syncit_component" : {
-                     "component" : "Syncit_UIComponent/js/component",
-                     "title": "Terms of service"
-               }
-           }
+                     "component" : "Syncit_UIComponent/js/cure",
+                      "template": "Syncit_UIComponent/terms",
+                       "terms": "<?php echo $block->title()?>"
+                     }
+                     }
         }
     }
     }
 
 </script>
-<p><?php echo $block->test()?></p>
+
